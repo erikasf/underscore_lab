@@ -2,6 +2,8 @@
 
 You're going to recreate some of the functionality of the popular JS library Underscore.js.  Write all of the following methods inside of an `_` object.
 
+**Fork this repo, push your code to your fork, and submit the link to your fork on students.gschool**
+
 * average - returns the average value in a given array
 
 ```
