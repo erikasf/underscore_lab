@@ -58,6 +58,22 @@ _.last([5, 4, 3, 2, 1]);
 
 
 ```
+max : function (x) {
++		var myArray = x;
++		var arrayLength = x.length;
++		var maxItem = myArray[0];
++		// console.log(maxItem);
++		for (var i = 0; i <= (arrayLength - 1); i++) {
++			if (myArray[i] >= maxItem) {
++				maxItem = myArray[i];
++				//	console.log(maxItem);
++			} else {
++				maxItem = maxItem;
++			}
++		}
++		return maxItem;
++	}
++	
 var numbers = [10, 5, 100, 2, 1000];
 _.max(numbers);
 => 1000
@@ -66,6 +82,20 @@ _.max(numbers);
 * min - returns the minimum value in an array
 
 ```
+	min : function (x) {
++		var myArray = x;
++		var arrayLength = x.length;
++		var minItem = myArray[0];
++		// console.log(minItem);
++		for (var i = 0; i <= (arrayLength - 1); i++) {
++			if (myArray[i] <= minItem) {
++				minItem = myArray[i];
++				// console.log(minItem);
++			} else {
++				minItem = minItem;
++			}
++		}
++		return minItem;
 var numbers = [10, 5, 100, 2, 1000];
 _.min(numbers);
 => 2
@@ -112,3 +142,15 @@ _.indexOf([1, 2, 3], 2);
 _.pluck(stooges, 'name');
 => ["moe", "larry", "curly"]
 ```
+
++
+
++//		...
++	}
++	
++	pluck : function () {
++//		...
++	}
++	
++};
++
