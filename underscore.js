@@ -48,3 +48,93 @@ console.log(array.length-1);
 _.last([5, 4, 3, 2, 1]);
 => 1
 ```
+// /*first we need to find a way to make the index come up randomly. We also need 
+                                       // version into and that we have a temp variable for the index that we are working with. 
+// we will also have to switch . 
+// My variables will be:*/
+
+``` function doTheShuffle(){     
+var temp;     //we need to define our 
+function ShuffleArray(collection) {
+  var currentIndex = collection.length;
+  var randomIndex;
+  var tempVal;
+
+  while (currentIndex !== 0) {
+
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex += -1;
+
+    tempVal = collection[currentIndex];
+    collection[currentIndex] = collection[randomIndex];
+    collection[randomIndex] = tempVal;
+  }
+console.log( collection);
+}
+     ]    } }3
+
+_.shuffle([1, 2, 3, 4, 5, 6]);
+=> [4, 1, 6, 3, 5, 2]
+```
+
+
+* sample - Produce a random sample from the list. Pass a number to return n random elements from the list. Otherwise a single random item will be returned.
+
+
+```
+	var sample = Math.floor(Math.random(1, 6)){
+		var array = [];
+		array.push[i];
+		}	
+console.log[i];
+_.sample([1, 2, 3, 4, 5, 6]);
+=> 4
+
+_.sample([1, 2, 3, 4, 5, 6], 3);
+=> [1, 6, 2]
+```
+
+* difference - returns the values from array that are not present in the other array.
+
+``` function String diff(String str1, String str2) {
+    int index = str1.lastIndexOf(str2);
+    if (index > -1) {
+      return str1.substring(str2.length());
+    }
+    return str1;
+  }
+}
+
+_.difference([1, 2, 3, 4, 5], [5, 2, 10]);
+=> [1, 3, 4]
+```
+
+* indexOf - Returns the index at which value can be found in the array, or -1 if value is not present in the array.
+
+```
+function whereIsIt(){
+	var value;
+	for(var i = 0 ; i < array.length); i ++){
+	if(array[i]== value;){
+		console.log[i]}
+		else (array[i] !== value){
+			return (-1)
+		}
+	}
+}
+}
+_.indexOf([1, 2, 3], 2);
+=> 1
+```
+
+
+* pluck - extracts a list of property values and returns them in an array.
+
+```
+function pluck(obj, key) {
+    return _.map(obj, _.property(key));
+  };
+  var stooges = [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
+_.pluck(stooges, 'name');
+=> ["moe", "larry", "curly"]
+}
